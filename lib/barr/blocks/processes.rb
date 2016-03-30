@@ -1,3 +1,6 @@
+require 'barr/block'
+require 'rubygems'
+
 module Barr
   module Blocks
 
