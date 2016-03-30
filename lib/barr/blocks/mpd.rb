@@ -7,10 +7,11 @@ module Barr
 
       def initialize(opts = {})
         super
+	mpd = MPD.new 'localhost', 6600
       end
 
       def update!
-        @output = sys_cmd
+        @output = mpd.current_song
       end
 
       private
